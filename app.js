@@ -100,11 +100,23 @@ function setFound(sceneId, item, isFound) {
   saveState();
 }
 
+/* ---------- Normalización de items ----------
+   Un item puede ser un string ("Varita") o un objeto { name, hint }.
+   Estos helpers permiten soportar ambos formatos sin romper el progreso,
+   que se referencia siempre por el nombre. */
+function itemName(item) {
+  return typeof item === "string" ? item : item.name;
+}
+
+function itemHint(item) {
+  return typeof item === "string" ? "" : (item.hint || "");
+}
+
 /* ---------- Conteos ---------- */
 function countSceneProgressFor(name, bookId, scene, scenes) {
   const bp = getBookProgressFor(name, bookId);
   const found = new Set(bp.found[scene.id] || []);
-  const done = scene.items.filter((i) => found.has(i)).length;
+  const done = scene.items.filter((i) => found.has(itemName(i))).length;
   return { done, total: scene.items.length };
 }
 
@@ -298,30 +310,68 @@ function renderScene() {
   const list = document.createElement("ul");
   list.className = "items-list";
 
-  scene.items.forEach((itemName) => {
+  scene.items.forEach((item) => {
+    const name = itemName(item);
+    const hint = itemHint(item);
+
     const li = document.createElement("li");
-    li.className = "item" + (found.has(itemName) ? " found" : "");
+    li.className = "item" + (found.has(name) ? " found" : "");
+
+    // fila principal: checkbox + label + botón de ayuda
+    const row = document.createElement("div");
+    row.className = "item-row";
 
     const cb = document.createElement("input");
     cb.type = "checkbox";
-    cb.checked = found.has(itemName);
-    const cbId = `${scene.id}__${itemName}`.replace(/\s+/g, "_");
+    cb.checked = found.has(name);
+    const cbId = `${scene.id}__${name}`.replace(/\s+/g, "_");
     cb.id = cbId;
 
     const label = document.createElement("label");
     label.htmlFor = cbId;
-    label.textContent = itemName;
+    label.textContent = name;
 
     cb.addEventListener("change", () => {
-      setFound(scene.id, itemName, cb.checked);
+      setFound(scene.id, name, cb.checked);
       li.classList.toggle("found", cb.checked);
       refreshSceneUI(scene, count, sceneFill);
       updateGlobalProgress();
       updateDots();
     });
 
-    li.appendChild(cb);
-    li.appendChild(label);
+    row.appendChild(cb);
+    row.appendChild(label);
+
+    // botón de ayuda (solo si el item tiene hint)
+    if (hint) {
+      const helpBtn = document.createElement("button");
+      helpBtn.type = "button";
+      helpBtn.className = "help-btn";
+      helpBtn.setAttribute("aria-label", "Ver ayuda de " + name);
+      helpBtn.setAttribute("aria-expanded", "false");
+      helpBtn.textContent = "ℹ️";
+
+      const hintBox = document.createElement("div");
+      hintBox.className = "item-hint";
+      hintBox.textContent = hint;
+      hintBox.hidden = true;
+
+      helpBtn.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        ev.stopPropagation(); // no togglear el checkbox
+        const showing = !hintBox.hidden;
+        hintBox.hidden = showing;
+        helpBtn.setAttribute("aria-expanded", String(!showing));
+        helpBtn.classList.toggle("open", !showing);
+      });
+
+      row.appendChild(helpBtn);
+      li.appendChild(row);
+      li.appendChild(hintBox);
+    } else {
+      li.appendChild(row);
+    }
+
     list.appendChild(li);
   });
 
@@ -339,7 +389,7 @@ function renderScene() {
 function refreshSceneUI(scene, countEl, fillEl) {
   const found = getFoundSet(scene.id);
   const total = scene.items.length;
-  const done = scene.items.filter((i) => found.has(i)).length;
+  const done = scene.items.filter((i) => found.has(itemName(i))).length;
   const pct = total === 0 ? 0 : Math.round((done / total) * 100);
 
   countEl.textContent = `${done} / ${total} · ${pct}%`;

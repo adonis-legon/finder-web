@@ -398,15 +398,22 @@ h2 {
 
 .item {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 10px;
+  flex-direction: column;
+  padding: 6px 4px;
   border-radius: 10px;
-  cursor: pointer;
   transition: background 0.15s;
 }
 
-.item:hover {
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 6px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.item-row:hover {
   background: var(--bg-panel-light);
 }
 
@@ -427,6 +434,50 @@ h2 {
 .item.found label {
   text-decoration: line-through;
   color: var(--text-dim);
+}
+
+/* Botón de ayuda (info) por objeto */
+.help-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--bg-dark);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s, border-color 0.2s, background 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.help-btn:hover {
+  border-color: var(--accent);
+}
+
+.help-btn:active {
+  transform: scale(0.9);
+}
+
+.help-btn.open {
+  border-color: var(--accent);
+  background: var(--bg-panel-light);
+}
+
+/* Caja de descripción desplegable */
+.item-hint {
+  margin: 2px 10px 10px 46px;
+  padding: 12px 14px;
+  background: var(--bg-dark);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  animation: fade 0.2s ease;
 }
 
 /* Navegación del wizard */
