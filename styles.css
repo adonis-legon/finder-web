@@ -8,6 +8,7 @@
   --text: #f2efe6;
   --text-dim: #a9b6c9;
   --green: #4caf50;
+  --complete: #4caf50;
   --red: #c0392b;
   --border-color: #2c456b;
   --bg-gradient-from: #1a2c47;
@@ -311,6 +312,27 @@ h2 {
   border-radius: var(--radius);
   overflow: hidden;
   animation: fade 0.25s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Escena completada: se resalta con el color de "completa" del tema */
+.scene-card.complete {
+  border-color: var(--complete);
+  box-shadow: 0 0 0 2px var(--complete), 0 0 18px -4px var(--complete);
+}
+
+.scene-card.complete .scene-header {
+  background: color-mix(in srgb, var(--complete) 22%, var(--bg-panel-light));
+}
+
+.scene-card.complete .scene-title {
+  color: var(--complete);
+}
+
+.scene-card.complete .scene-title::after {
+  content: " ✓";
+  color: var(--complete);
+  font-weight: bold;
 }
 
 .scene-header {
@@ -319,18 +341,44 @@ h2 {
   align-items: center;
   justify-content: space-between;
   background: var(--bg-panel-light);
+  transition: background 0.3s ease;
 }
 
 .scene-header .scene-title {
   font-size: 1.2rem;
   color: var(--accent-soft);
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .scene-header .scene-count {
   font-size: 0.85rem;
   color: var(--text-dim);
   white-space: nowrap;
+}
+
+/* Barra de progreso por escena */
+.scene-progress {
+  padding: 12px 18px 0;
+}
+
+.scene-progress-bar {
+  height: 8px;
+  background: var(--bg-dark);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.scene-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  transition: width 0.4s ease, background 0.3s ease;
+}
+
+.scene-card.complete .scene-progress-fill {
+  background: var(--complete);
 }
 
 .scene-desc {
@@ -441,8 +489,8 @@ h2 {
 }
 
 .dot.complete {
-  background: var(--green);
-  border-color: var(--green);
+  background: var(--complete);
+  border-color: var(--complete);
 }
 
 .dot.active.complete {

@@ -258,6 +258,7 @@ function renderScene() {
   const found = getFoundSet(scene.id);
 
   el.sceneCard.innerHTML = "";
+  el.sceneCard.className = "scene-card"; // reset (por si venía "complete")
 
   // header
   const header = document.createElement("div");
@@ -269,12 +270,21 @@ function renderScene() {
 
   const count = document.createElement("span");
   count.className = "scene-count";
-  const done = scene.items.filter((i) => found.has(i)).length;
-  count.textContent = `${done} / ${scene.items.length}`;
 
   header.appendChild(title);
   header.appendChild(count);
   el.sceneCard.appendChild(header);
+
+  // barra de progreso de la escena
+  const sceneProgress = document.createElement("div");
+  sceneProgress.className = "scene-progress";
+  const sceneBar = document.createElement("div");
+  sceneBar.className = "scene-progress-bar";
+  const sceneFill = document.createElement("div");
+  sceneFill.className = "scene-progress-fill";
+  sceneBar.appendChild(sceneFill);
+  sceneProgress.appendChild(sceneBar);
+  el.sceneCard.appendChild(sceneProgress);
 
   // descripción
   if (scene.description) {
@@ -305,8 +315,7 @@ function renderScene() {
     cb.addEventListener("change", () => {
       setFound(scene.id, itemName, cb.checked);
       li.classList.toggle("found", cb.checked);
-      const nDone = scene.items.filter((i) => getFoundSet(scene.id).has(i)).length;
-      count.textContent = `${nDone} / ${scene.items.length}`;
+      refreshSceneUI(scene, count, sceneFill);
       updateGlobalProgress();
       updateDots();
     });
@@ -318,9 +327,26 @@ function renderScene() {
 
   el.sceneCard.appendChild(list);
 
+  // estado inicial de contador, barra y "completa"
+  refreshSceneUI(scene, count, sceneFill);
+
   // estado de los botones
   el.prevSceneBtn.disabled = sceneIndex === 0;
   el.nextSceneBtn.disabled = sceneIndex === gameData.scenes.length - 1;
+}
+
+// Actualiza contador, barra y estado "completa" de la escena visible.
+function refreshSceneUI(scene, countEl, fillEl) {
+  const found = getFoundSet(scene.id);
+  const total = scene.items.length;
+  const done = scene.items.filter((i) => found.has(i)).length;
+  const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+
+  countEl.textContent = `${done} / ${total} · ${pct}%`;
+  fillEl.style.width = pct + "%";
+
+  const isComplete = total > 0 && done === total;
+  el.sceneCard.classList.toggle("complete", isComplete);
 }
 
 function renderDots() {

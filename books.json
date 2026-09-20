@@ -15,6 +15,7 @@
         "--text": "#f2efe6",
         "--text-dim": "#a9b6c9",
         "--green": "#4caf50",
+        "--complete": "#2ecc71",
         "--red": "#c0392b",
         "--border-color": "#2c456b",
         "--bg-gradient-from": "#1a2c47",
