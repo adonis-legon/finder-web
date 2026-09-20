@@ -1,0 +1,45 @@
+{
+  "appTitle": "Buscador de Objetos",
+  "books": [
+    {
+      "id": "harry-potter",
+      "name": "El Mundo Mágico",
+      "subtitle": "Busca y encuentra en Hogwarts",
+      "dataFile": "data-harry-potter.json",
+      "theme": {
+        "--bg-dark": "#0e1a2b",
+        "--bg-panel": "#16263f",
+        "--bg-panel-light": "#1f3557",
+        "--accent": "#d4af37",
+        "--accent-soft": "#e8cf7a",
+        "--text": "#f2efe6",
+        "--text-dim": "#a9b6c9",
+        "--green": "#4caf50",
+        "--red": "#c0392b",
+        "--border-color": "#2c456b",
+        "--bg-gradient-from": "#1a2c47",
+        "--bg-gradient-to": "#0e1a2b"
+      }
+    },
+    {
+      "id": "dino-world",
+      "name": "El Mundo de los Dinosaurios",
+      "subtitle": "Explora la era prehistórica",
+      "dataFile": "data-dino-world.json",
+      "theme": {
+        "--bg-dark": "#14210f",
+        "--bg-panel": "#1e3016",
+        "--bg-panel-light": "#2b4520",
+        "--accent": "#e07b28",
+        "--accent-soft": "#f2a55c",
+        "--text": "#f3f0e4",
+        "--text-dim": "#b3c0a3",
+        "--green": "#7cb342",
+        "--red": "#c0392b",
+        "--border-color": "#3c5a2c",
+        "--bg-gradient-from": "#284a1a",
+        "--bg-gradient-to": "#14210f"
+      }
+    }
+  ]
+}

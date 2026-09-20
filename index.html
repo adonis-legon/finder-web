@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Objetos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Encabezado -->
+    <header class="app-header">
+      <h1 id="appTitle">Buscador de Objetos</h1>
+      <p id="appSubtitle" class="app-subtitle"></p>
+      <div id="contextBar" class="context-bar hidden">
+        <button id="backToBooksBtn" class="btn-small">📚 Libros</button>
+        <span id="contextInfo" class="context-info"></span>
+        <button id="changePlayerBtn" class="btn-small">Cambiar jugador</button>
+      </div>
+    </header>
+
+    <!-- Pantalla 1: selección de libro -->
+    <section id="bookScreen" class="screen">
+      <h2>Elegí un libro</h2>
+      <div id="bookList" class="book-list"></div>
+    </section>
+
+    <!-- Pantalla 2: selección de jugador -->
+    <section id="playerScreen" class="screen hidden">
+      <button id="backToBooksFromPlayer" class="btn-back">‹ Volver a libros</button>
+      <h2>¿Quién va a jugar?</h2>
+
+      <div id="playerList" class="player-list"></div>
+
+      <div class="new-player">
+        <input
+          type="text"
+          id="newPlayerInput"
+          placeholder="Nombre del nuevo jugador"
+          maxlength="20"
+          autocomplete="off"
+        />
+        <button id="addPlayerBtn" class="btn-primary">Crear jugador</button>
+      </div>
+    </section>
+
+    <!-- Pantalla 3: juego (wizard) -->
+    <section id="gameScreen" class="screen hidden">
+      <div class="global-progress">
+        <div class="progress-bar">
+          <div id="globalProgressFill" class="progress-fill"></div>
+        </div>
+        <span id="globalProgressText" class="progress-text"></span>
+      </div>
+
+      <!-- Wizard de escenas -->
+      <div class="wizard">
+        <div id="sceneCard" class="scene-card"></div>
+
+        <div class="wizard-nav">
+          <button id="prevSceneBtn" class="btn-nav">‹ Anterior</button>
+          <div id="sceneDots" class="scene-dots"></div>
+          <button id="nextSceneBtn" class="btn-nav">Siguiente ›</button>
+        </div>
+      </div>
+
+      <div class="game-actions">
+        <button id="resetProgressBtn" class="btn-danger">Reiniciar progreso de este libro</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "scenes": [
+    {
+      "id": "callejon-diagon",
+      "name": "El Callejón Diagon",
+      "description": "La bulliciosa calle comercial de los magos.",
+      "items": [
+        "Varita mágica",
+        "Caldero de peltre",
+        "Lechuza blanca",
+        "Escoba voladora",
+        "Bolsa de galeones",
+        "Sombrero puntiagudo",
+        "Libro de hechizos",
+        "Rana de chocolate"
+      ]
+    },
+    {
+      "id": "gran-comedor",
+      "name": "El Gran Comedor",
+      "description": "El salón principal del castillo con sus velas flotantes.",
+      "items": [
+        "Vela flotante",
+        "Copa dorada",
+        "Sombrero seleccionador",
+        "Estandarte de Gryffindor",
+        "Fantasma",
+        "Plato de comida",
+        "Reloj de arena de las casas"
+      ]
+    },
+    {
+      "id": "bosque-prohibido",
+      "name": "El Bosque Prohibido",
+      "description": "El oscuro y misterioso bosque cerca del castillo.",
+      "items": [
+        "Unicornio",
+        "Centauro",
+        "Araña gigante",
+        "Telaraña",
+        "Seta luminosa",
+        "Hilo de plata",
+        "Ojos en la oscuridad",
+        "Farol"
+      ]
+    }
+  ]
+}
