@@ -1,4 +1,4 @@
-# Buscador de Objetos (PoC)
+# Buscador de Objetos (v0.1)
 
 Juego web para acompañar libros físicos de tipo "busca y encuentra". Muestra las escenas
 de cada libro con su lista de objetos, permite marcar los encontrados y guarda el progreso
