@@ -43,6 +43,75 @@
         "8 balanzas",
         "1 carpeta azul"
       ]
+    },
+    {
+      "id": "bosque-prohibido",
+      "name": "Bosque Prohibido",
+      "description": "El oscuro y misterioso bosque cercano al castillo.",
+      "items": [
+        "1 charco plateado",
+        "Firenze",
+        "1 constelación",
+        "Huellas de un zapato",
+        "1 rama de árbol curvada",
+        "7 lechuzas",
+        "Fang",
+        "Hagrid",
+        "2 farolas",
+        "La ballesta de Hagrid",
+        "1 raíz en espiral",
+        "Huellas de centauro",
+        "1 arañazo misterioso",
+        "1 corbata de Slytherin",
+        "3 corbatas de Gryffindor",
+        "1 figura con capa"
+      ]
+    },
+    {
+      "id": "flourish-y-blotts",
+      "name": "Flourish y Blotts",
+      "description": "La librería del Callejón Diagon.",
+      "items": [
+        "Molly Weasley",
+        "3 ejemplares de El encantador",
+        "Gilderoy Lockhart",
+        "1 fotógrafo de El Profeta",
+        "6 manos de oro",
+        "1 diario de cuero negro",
+        "La varita de Lucius Malfoy",
+        "2 lechuzas",
+        "Fred y George Weasley",
+        "Draco Malfoy",
+        "8 libros azules seguidos",
+        "1 poción derramada",
+        "1 par de gafas rotas",
+        "1 pila de libros que se curva",
+        "Flores lilas",
+        "4 huellas distintas"
+      ]
+    },
+    {
+      "id": "la-madriguera",
+      "name": "La Madriguera",
+      "description": "La entrañable casa de la familia Weasley.",
+      "items": [
+        "1 capa verde",
+        "2 tazas de té",
+        "1 escoba que barre sola",
+        "1 cuchillo encantado",
+        "1 olla naranja",
+        "11 sillas de madera",
+        "1 cepillo de limpiar",
+        "Los 5 Weasley más jóvenes",
+        "El coche de los Weasley",
+        "1 rebanada de pan",
+        "Arthur Weasley",
+        "Hedwig y Errol",
+        "1 reloj mágico",
+        "4 tarros de conservas de fruta",
+        "1 proyecto de punto a medias",
+        "1 pocilga"
+      ]
     }
   ]
 }
