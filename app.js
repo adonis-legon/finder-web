@@ -10,7 +10,6 @@ const CURRENT_PLAYER_KEY = "finder.currentPlayer";
 
 const BOOK_ICONS = {
   "harry-potter": "⚡",
-  "dino-world": "🦕",
 };
 const DEFAULT_BOOK_ICON = "📖";
 

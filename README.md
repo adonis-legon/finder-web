@@ -19,7 +19,7 @@ presenta las escenas en modo **wizard** (una por pantalla, con avanzar/retrocede
 - `styles.css` — estilos basados en variables CSS (el tema se cambia en caliente).
 - `app.js` — lógica: catálogo, temas, jugadores, progreso y wizard.
 - `books.json` — **catálogo de libros**: nombre, subtítulo, tema y archivo de escenas.
-- `data-harry-potter.json`, `data-dino-world.json` — escenas de cada libro.
+- `data-harry-potter.json` — escenas del libro.
 - `README.md` — este archivo.
 
 ## Cómo ejecutarlo

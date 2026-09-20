@@ -1,47 +1,47 @@
 {
   "scenes": [
     {
-      "id": "callejon-diagon",
-      "name": "El Callejón Diagon",
-      "description": "La bulliciosa calle comercial de los magos.",
+      "id": "anden-9-tres-cuartos",
+      "name": "Andén 9 ¾",
+      "description": "El andén secreto desde donde parte el Expreso de Hogwarts.",
       "items": [
-        "Varita mágica",
-        "Caldero de peltre",
-        "Lechuza blanca",
-        "Escoba voladora",
-        "Bolsa de galeones",
-        "Sombrero puntiagudo",
-        "Libro de hechizos",
-        "Rana de chocolate"
+        "Percy Weasley",
+        "1 reloj",
+        "Ginny Weasley",
+        "Scabbers",
+        "1 maquinista muggle",
+        "2 carteles del andén 9 ¾",
+        "1 billete para el Expreso de Hogwarts",
+        "1 maquinista mago",
+        "Hedwig",
+        "14 baúles",
+        "El monograma de Harry",
+        "Los números \"5972\"",
+        "1 familia despidiéndose",
+        "1 tren a Hogwarts y 2 veces su nombre",
+        "2 escudos de Hogwarts",
+        "Los gemelos Weasley"
       ]
     },
     {
-      "id": "gran-comedor",
-      "name": "El Gran Comedor",
-      "description": "El salón principal del castillo con sus velas flotantes.",
+      "id": "gringotts",
+      "name": "Gringotts",
+      "description": "El banco de los magos, gobernado por duendes.",
       "items": [
-        "Vela flotante",
-        "Copa dorada",
-        "Sombrero seleccionador",
-        "Estandarte de Gryffindor",
-        "Fantasma",
-        "Plato de comida",
-        "Reloj de arena de las casas"
-      ]
-    },
-    {
-      "id": "bosque-prohibido",
-      "name": "El Bosque Prohibido",
-      "description": "El oscuro y misterioso bosque cerca del castillo.",
-      "items": [
-        "Unicornio",
-        "Centauro",
-        "Araña gigante",
-        "Telaraña",
-        "Seta luminosa",
-        "Hilo de plata",
-        "Ojos en la oscuridad",
-        "Farol"
+        "6 llaves",
+        "1 carta marcada como \"Top secret\"",
+        "1 farol que se ha apagado",
+        "9 plumas",
+        "1 duende poniendo un sello",
+        "2 bolsitas de cuero",
+        "1 persona revisando sus bolsillos",
+        "1 pila de monedas de plata",
+        "1 dosier con letras rojas",
+        "1 guarda del banco",
+        "2 carritos llenos",
+        "2 candelabros de techo",
+        "8 balanzas",
+        "1 carpeta azul"
       ]
     }
   ]
