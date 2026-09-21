@@ -175,7 +175,7 @@ async function selectBook(bookId) {
     if (!res.ok) throw new Error("No se pudo cargar " + book.dataFile);
     gameData = await res.json();
   } catch (e) {
-    alert("Error al cargar el libro. Revisá que exista " + book.dataFile);
+    alert("Error al cargar el libro. Revisa que exista " + book.dataFile);
     console.error(e);
     return;
   }
@@ -199,7 +199,7 @@ function renderPlayerList() {
     const empty = document.createElement("p");
     empty.style.textAlign = "center";
     empty.style.color = "var(--text-dim)";
-    empty.textContent = "Todavía no hay jugadores. ¡Creá el primero!";
+    empty.textContent = "Todavía no hay jugadores. ¡Crea el primero!";
     el.playerList.appendChild(empty);
     return;
   }
@@ -504,7 +504,7 @@ async function init() {
     document.body.innerHTML =
       "<p style='color:#c0392b;text-align:center;margin-top:40px'>" +
       "Error al cargar el catálogo de libros. Si abriste el archivo directamente, " +
-      "necesitás un servidor local (ver README).</p>";
+      "necesitas un servidor local (ver README).</p>";
     console.error(e);
     return;
   }
