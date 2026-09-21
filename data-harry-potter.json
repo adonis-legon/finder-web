@@ -112,6 +112,178 @@
         { "name": "1 proyecto de punto a medias", "hint": "Tejido a mano con lana y agujas (como una bufanda) que todavía no está terminado." },
         { "name": "1 pocilga", "hint": "Una pocilga es el corral donde viven los cerdos." }
       ]
+    },
+    {
+      "id": "campo-de-quidditch",
+      "name": "Campo de Quidditch",
+      "description": "El estadio donde se juega el deporte mágico volando en escobas.",
+      "items": [
+        { "name": "La snitch dorada", "hint": "Una pelotita dorada con alas que vuela muy rápido. Atraparla hace ganar el partido." },
+        { "name": "Hermione Granger", "hint": "La mejor amiga de Harry. Es muy inteligente y le encanta leer y estudiar." },
+        { "name": "Lucius Malfoy", "hint": "El papá de Draco, un mago elegante de pelo largo y rubio, y algo malo." },
+        { "name": "1 varita rota", "hint": "Una varita mágica que está partida o quebrada." },
+        { "name": "Lee Jordan", "hint": "Un alumno amigo de los gemelos Weasley. Narra los partidos por altavoz." },
+        { "name": "1 par de binoculares", "hint": "Los binoculares sirven para ver de cerca las cosas que están lejos." },
+        { "name": "2 golpeadores y 1 bludger", "hint": "En quidditch, los golpeadores protegen a su equipo de la bludger, una pelota negra que golpea sola." },
+        { "name": "1 carrera entre buscadores", "hint": "El buscador es quien atrapa la snitch. Aquí dos compiten volando." },
+        { "name": "1 jugador cayéndose de la escoba", "hint": "Un jugador que se está resbalando de su escoba voladora." },
+        { "name": "El marcador", "hint": "El cartel grande que muestra cuántos puntos lleva cada equipo." },
+        { "name": "Colin Creevey", "hint": "Un niño mago muy fan de Harry que siempre lleva su cámara de fotos." },
+        { "name": "Gilderoy Lockhart", "hint": "Un mago presumido y famoso que escribe libros y adora las fotos." },
+        { "name": "20 bufandas de las casas de Hogwarts", "hint": "Bufandas con los colores de las cuatro casas del colegio." },
+        { "name": "3 agujeros en las torres del público", "hint": "Huecos en las gradas altas donde se sienta la gente a mirar." },
+        { "name": "5 banderas de 2 casas de Hogwarts", "hint": "Banderas con los colores de dos de las casas del colegio." }
+      ]
+    },
+    {
+      "id": "honeydukes",
+      "name": "Honeydukes",
+      "description": "La famosa tienda de dulces de los magos.",
+      "items": [
+        { "name": "Orejeras lilas", "hint": "Las orejeras abrigan las orejas del frío. Estas son de color lila (morado clarito)." },
+        { "name": "3 bichos", "hint": "Tres insectos o animalitos pequeños escondidos por ahí." },
+        { "name": "1 anuncio amarillo de helado", "hint": "Un cartel de color amarillo que anuncia helados." },
+        { "name": "1 guerra de bolas de nieve", "hint": "Niños jugando a tirarse bolas de nieve unos a otros." },
+        { "name": "1 esqueleto", "hint": "Un esqueleto es el conjunto de huesos del cuerpo. ¡Este es de dulce!" },
+        { "name": "1 piruleta roja y verde", "hint": "Una piruleta es un caramelo con palito. Esta es de dos colores: rojo y verde." },
+        { "name": "1 bolsa de la compra llena", "hint": "Una bolsa repleta de cosas compradas en la tienda." },
+        { "name": "Seamus Finnigan", "hint": "Un compañero de clase de Harry al que a veces le explotan las cosas por accidente." }
+      ]
+    },
+    {
+      "id": "baile-de-navidad",
+      "name": "Baile de Navidad",
+      "description": "Una gran fiesta de baile en el colegio durante la Navidad.",
+      "items": [
+        { "name": "3 árboles de Navidad", "hint": "Árboles decorados con adornos y luces para la Navidad." },
+        { "name": "4 campeones del Torneo", "hint": "Los cuatro alumnos elegidos para competir en un torneo mágico entre colegios." },
+        { "name": "Hermione Granger", "hint": "La amiga inteligente de Harry, aquí muy elegante para el baile." },
+        { "name": "Ron Weasley", "hint": "El mejor amigo de Harry, de la familia del pelo rojo." },
+        { "name": "Neville Longbottom", "hint": "Un compañero de Harry, algo tímido y despistado, pero muy valiente." },
+        { "name": "Madame Maxime", "hint": "La directora de otro colegio de magia. Es una mujer gigante y muy alta." },
+        { "name": "Igor Karkaroff", "hint": "El director de un colegio de magia del norte, con abrigo de piel." },
+        { "name": "5 alumnos con uniformes de Durmstrang", "hint": "Durmstrang es otro colegio de magia. Sus alumnos visitan Hogwarts." },
+        { "name": "Ojoloco Moody", "hint": "Un mago con un ojo mágico que gira y puede ver a través de todo." },
+        { "name": "El profesor Flitwick", "hint": "Un profesor muy bajito que enseña a hacer hechizos con la varita." },
+        { "name": "Filch y la Señora Norris", "hint": "Filch es el conserje gruñón del colegio y la Señora Norris es su gata." },
+        { "name": "1 bebida derramada", "hint": "Un vaso de bebida que se cayó y se regó." },
+        { "name": "2 guirnaldas", "hint": "Una guirnalda es una tira larga de adornos para decorar en las fiestas." },
+        { "name": "1 flor amarilla", "hint": "Una sola flor de color amarillo." },
+        { "name": "4 gárgolas", "hint": "Las gárgolas son figuras de piedra con forma de monstruo que adornan los castillos." },
+        { "name": "Padma y Parvati Patil", "hint": "Dos hermanas gemelas, compañeras de Harry." }
+      ]
+    },
+    {
+      "id": "ministerio-de-magia",
+      "name": "Ministerio de Magia",
+      "description": "El gobierno de los magos, donde trabajan miles de brujos.",
+      "items": [
+        { "name": "3 jaulas vacías", "hint": "Tres jaulas sin ningún animal dentro." },
+        { "name": "Kingsley Shacklebolt", "hint": "Un mago alto, calvo y valiente que trabaja protegiendo a la gente." },
+        { "name": "1 escoba junto a un caldero", "hint": "Una escoba voladora al lado de una olla mágica (el caldero)." },
+        { "name": "1 conjunto de túnicas de quidditch", "hint": "La ropa que usan los jugadores del deporte mágico en escoba." },
+        { "name": "Arthur Weasley", "hint": "El papá de Ron. Trabaja aquí, en el gobierno de los magos." },
+        { "name": "4 diarios El Profeta", "hint": "El Profeta es el periódico de los magos, con noticias del mundo mágico." },
+        { "name": "La Fuente de los Hermanos Mágicos", "hint": "Una gran fuente de agua con estatuas doradas de varias criaturas mágicas." },
+        { "name": "3 personas llegando con polvos flu", "hint": "Los polvos flu son un polvo mágico que sirve para viajar por las chimeneas." },
+        { "name": "La entrada de los visitantes", "hint": "La puerta por donde entran las personas que vienen de visita." },
+        { "name": "3 lechuzas llevando cartas", "hint": "Aves nocturnas que reparten el correo de los magos volando." },
+        { "name": "1 clip lila para el pelo", "hint": "Un broche o pinza de color lila para sujetar el cabello." },
+        { "name": "11 sombreros", "hint": "Once gorros o sombreros de magos." },
+        { "name": "1 visitante con los hombros sucios", "hint": "Una persona de visita que tiene los hombros manchados." },
+        { "name": "1 maletín verde", "hint": "Un maletín es una maleta pequeña para llevar papeles. Este es verde." },
+        { "name": "4 identificaciones de visitante", "hint": "Tarjetas o placas que dicen quién es cada persona que viene de visita." },
+        { "name": "4 sobres lilas", "hint": "Cuatro sobres de cartas de color lila." }
+      ]
+    },
+    {
+      "id": "sala-comun-gryffindor",
+      "name": "Sala Común de Gryffindor",
+      "description": "La acogedora sala donde descansan los alumnos de la casa de Harry.",
+      "items": [
+        { "name": "1 chimenea encendida", "hint": "El hueco en la pared donde arde el fuego para dar calorcito." },
+        { "name": "Parvati y Padma Patil", "hint": "Dos hermanas gemelas, compañeras de Harry." },
+        { "name": "1 radio", "hint": "Un aparato antiguo para escuchar música y noticias." },
+        { "name": "1 juego de cartas", "hint": "Un mazo de cartas para jugar." },
+        { "name": "1 taza de té", "hint": "Una taza con té, una bebida caliente." },
+        { "name": "2 hombres con barba", "hint": "Dos hombres que tienen barba en la cara." },
+        { "name": "1 alumna a quien le están haciendo trenzas", "hint": "Una niña a la que le peinan el pelo haciéndole trenzas." },
+        { "name": "Mimbulus mimbletonia", "hint": "Una planta rara y espinosa que suelta un líquido apestoso cuando la tocan." },
+        { "name": "El Profeta", "hint": "El periódico de los magos, con las noticias del mundo mágico." },
+        { "name": "Dean Thomas", "hint": "Un compañero de clase de Harry al que le gusta el fútbol y dibujar." },
+        { "name": "1 bufanda de Gryffindor", "hint": "Una bufanda con los colores rojo y dorado de la casa de Harry." },
+        { "name": "1 pluma amarilla", "hint": "Una pluma de ave de color amarillo, que se usaba para escribir." },
+        { "name": "Fred y George Weasley", "hint": "Los hermanos gemelos bromistas de Ron." },
+        { "name": "1 lechuza", "hint": "Un ave de la noche que lleva el correo de los magos." },
+        { "name": "Zumo de calabaza", "hint": "El jugo de calabaza es la bebida favorita de los alumnos del colegio." },
+        { "name": "1 libro recubierto de oro", "hint": "Un libro forrado o decorado con color dorado." }
+      ]
+    },
+    {
+      "id": "sortilegios-weasley",
+      "name": "Sortilegios Weasley",
+      "description": "La divertida tienda de bromas de los gemelos Weasley.",
+      "items": [
+        { "name": "1 corbata amarilla", "hint": "Una corbata de color amarillo." },
+        { "name": "Lavender Brown", "hint": "Una compañera de Harry, muy cariñosa y risueña." },
+        { "name": "1 piruleta", "hint": "Un caramelo grande con palito para chupar." },
+        { "name": "Fuegos artificiales", "hint": "Luces de colores que explotan en el aire, como en las fiestas." },
+        { "name": "18 logotipos de Sortilegios Weasley", "hint": "El logotipo es el dibujo o símbolo de la tienda. Búscalo muchas veces." },
+        { "name": "Filtros de amor", "hint": "Pociones que, en broma, hacen que alguien se enamore." },
+        { "name": "1 micropuff rosa", "hint": "Un micropuff es una bolita de pelos rosada, redonda y muy tierna, que ronronea." },
+        { "name": "Ron Weasley y Harry Potter", "hint": "Los dos mejores amigos: Ron (pelo rojo) y Harry (gafas y cicatriz)." },
+        { "name": "1 clienta contando el cambio", "hint": "Una clienta es alguien que compra. El cambio son las monedas que devuelven al pagar." },
+        { "name": "1 víctima de una pastilla vomitiva", "hint": "Una broma: alguien que comió una pastilla que da ganas de vomitar." },
+        { "name": "1 clienta que ha recibido una descarga", "hint": "Una compradora a la que le dio un pequeño corrientazo, como una chispa." },
+        { "name": "1 persona caminando por la pared", "hint": "Alguien que, por arte de magia, camina pegado a la pared." },
+        { "name": "La profesora Umbridge", "hint": "Una profesora muy mala que se viste toda de rosa y adora a los gatos." }
+      ]
+    },
+    {
+      "id": "mazmorra-de-pociones",
+      "name": "Mazmorra de pociones",
+      "description": "El aula bajo el castillo donde se preparan pociones mágicas.",
+      "items": [
+        { "name": "El libro del Príncipe Mestizo", "hint": "Un libro de pociones muy viejo, lleno de notas escritas a mano por su antiguo dueño." },
+        { "name": "1 botellita de Felix Felicis", "hint": "Una poción dorada que da mucha suerte a quien la toma." },
+        { "name": "1 vaina siendo pinchada", "hint": "Una vaina es la cáscara donde crecen algunas semillas, como la de las arvejas." },
+        { "name": "1 poción que echa humo", "hint": "Una bebida mágica de la que sale humo." },
+        { "name": "1 caldero que ha estallado", "hint": "El caldero es la olla de los magos. Este explotó." },
+        { "name": "Hermione Granger", "hint": "La amiga más estudiosa de Harry." },
+        { "name": "Llamas azules", "hint": "Fuego de color azul en vez del típico naranja." },
+        { "name": "1 botella con una poción rosa", "hint": "Una botella con una bebida mágica de color rosado." },
+        { "name": "Harry Potter", "hint": "El niño mago protagonista, con gafas redondas y una cicatriz en la frente." },
+        { "name": "1 botella con un filtro de amor", "hint": "Una poción que, en broma, hace que alguien se enamore." },
+        { "name": "1 estante con botellas vacías", "hint": "Una repisa con botellas sin nada dentro." },
+        { "name": "El profesor Slughorn", "hint": "Un profesor de pociones gordito y simpático al que le gustan los alumnos famosos." },
+        { "name": "1 poción derramada", "hint": "Una bebida mágica que se cayó y se regó en el suelo." },
+        { "name": "1 líquido pringoso verde", "hint": "Un líquido verde, pegajoso y baboso." },
+        { "name": "1 cuchara derretida", "hint": "Una cuchara que se ablandó y perdió su forma por el calor." },
+        { "name": "15 calderos", "hint": "Quince ollas de metal donde los magos preparan sus pociones." }
+      ]
+    },
+    {
+      "id": "sala-de-los-menesteres",
+      "name": "Sala de los Menesteres",
+      "description": "Una sala secreta del castillo que aparece cuando alguien la necesita.",
+      "items": [
+        { "name": "1 armario evanescente", "hint": "Un armario mágico: lo que metes dentro desaparece y aparece en otro armario lejano." },
+        { "name": "1 candelabro de techo", "hint": "Una lámpara grande con muchas velas que cuelga del techo." },
+        { "name": "1 globo terráqueo polvoriento", "hint": "Un globo terráqueo es una bola con el mapa del mundo. Este está lleno de polvo." },
+        { "name": "1 pájaro pequeño", "hint": "Un avecita chiquita." },
+        { "name": "1 peón, 1 torre, 1 caballo y 1 alfil enormes", "hint": "Cuatro piezas gigantes del ajedrez, un juego de mesa." },
+        { "name": "1 bola de cristal agrietada", "hint": "Una bola de vidrio para 'adivinar el futuro' que está rajada." },
+        { "name": "5 pilas de libros", "hint": "Cinco montones de libros apilados uno sobre otro." },
+        { "name": "3 marcos vacíos", "hint": "Tres marcos de cuadro sin ninguna pintura dentro." },
+        { "name": "1 arpa", "hint": "El arpa es un instrumento musical grande con muchas cuerdas que se tocan con los dedos." },
+        { "name": "1 dragón verde", "hint": "Un dragón es un enorme animal con alas que echa fuego. Este es verde." },
+        { "name": "1 lupa", "hint": "Un cristal con mango que hace que las cosas se vean más grandes." },
+        { "name": "El libro del Príncipe Mestizo", "hint": "El viejo libro de pociones lleno de notas escritas a mano." },
+        { "name": "1 proyector de diapositivas", "hint": "Un aparato antiguo que muestra fotos grandes en la pared." },
+        { "name": "1 montón de escritorios apilados", "hint": "Muchas mesas de estudiar amontonadas una encima de otra." },
+        { "name": "3 calderos medio derretidos", "hint": "Tres ollas de magos que se ablandaron un poco por el calor." },
+        { "name": "1 gramófono", "hint": "Un aparato muy antiguo, con una bocina grande, que sirve para escuchar música." }
+      ]
     }
   ]
 }
